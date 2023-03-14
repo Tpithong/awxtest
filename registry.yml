@@ -1,6 +1,6 @@
 ---
 - name: registry test
-  hosts: localhost
+  hosts: localhost2
 
 
   tasks:
