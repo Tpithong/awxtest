@@ -1,7 +1,5 @@
 ---
 - name: registry test
-  hosts: localhost2
-
 
   tasks:
   - name: login to registry
