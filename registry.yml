@@ -1,10 +1,14 @@
 ---
 - name: registry test
-  hosts: 192.168.1.80
   
   tasks:
-  - name: login to registry
-    containers.podman.podman_login:
-      username: user
-      password: password
-      registry: 192.168.1.80:5000
+  - name: Creating an empty file
+    file:
+      path: "~/test.txt"
+      state: touch
+#  tasks:
+#  - name: login to registry
+#    containers.podman.podman_login:
+#      username: user
+#      password: password
+#      registry: 192.168.1.80:5000
