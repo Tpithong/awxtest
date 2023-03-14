@@ -1,6 +1,6 @@
 ---
 - name: registry test
-  hosts: 192.*
+  hosts: 192.168.1.80:5001
 
   tasks:
   - name: login to registry
