@@ -1,6 +1,6 @@
 ---
 - name: registry test
-  
+  hosts: registry
   tasks:
   - name: Creating an empty file
     file:
