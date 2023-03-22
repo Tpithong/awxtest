@@ -1,3 +1,13 @@
-- name: Pull an image
-  containers.podman.podman_image:
-    name: quay.io/bitnami/wildfly
+---
+- name: registry test
+  hosts: 192.168.1.80
+
+  tasks:
+  - name: Build and push an image using username and password
+    containers.podman.podman_image:
+      name: cactus
+      push: yes
+      username: user
+      password: test
+      push_args:
+        dest: 192.168.1.80:5000/cactus
