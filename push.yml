@@ -5,7 +5,7 @@
   tasks:
   - name: Build and push an image using username and password
     containers.podman.podman_image:
-      name: localhost/ansible_aut:version1
+      name: ansible_aut:version1
       push: yes
       username: user
       password: test
