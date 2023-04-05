@@ -1,6 +1,6 @@
 ---
 - name: registry test
-  hosts: 192.168.1.*
+  hosts: loki4
 
   tasks:
   - name: Build and push an image using username and password
