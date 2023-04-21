@@ -1,0 +1,21 @@
+---
+- name: restart gitlab
+  hosts: gitlab
+  remote_user: root
+  tasks:
+
+    - name: Example from an Ansible Playbook
+      ansible.builtin.ping:
+      notify:
+      - Restart apache
+
+    - name: Ensure apache is running
+      ansible.builtin.service:
+        name: ssh
+        state: started
+
+  handlers:
+    - name: Restart apache
+      ansible.builtin.service:
+        name: ssh
+        state: restarted
