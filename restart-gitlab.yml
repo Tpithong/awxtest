@@ -10,11 +10,11 @@
 
     - name: Ensure apache is running
       ansible.builtin.service:
-        name: ssh
+        name: sshd
         state: started
 
   handlers:
     - name: Restart apache
       ansible.builtin.service:
-        name: ssh
+        name: sshd
         state: restarted
