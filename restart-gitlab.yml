@@ -1,6 +1,6 @@
 ---
 - name: restart gitlab
-  hosts: gitlab
+  hosts: loki4
   remote_user: root
   tasks:
 
