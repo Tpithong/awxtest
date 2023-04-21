@@ -7,8 +7,6 @@
       ansible.builtin.file:
         path: ~/foo.txt
         state: touch
-      notify:
-      - Restart apache
 
     - name: Ensure apache is running
       ansible.builtin.service:
