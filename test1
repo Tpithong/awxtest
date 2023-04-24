@@ -7,7 +7,7 @@
 
     - name: Import the example role
       import_role:
-        name: example
+        name: test-role
 
     - name: Print a message
       ansible.builtin.debug:
