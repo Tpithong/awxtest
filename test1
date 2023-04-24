@@ -1,0 +1,14 @@
+---
+- hosts: loki4
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "before we run our role"
+
+    - name: Import the example role
+      import_role:
+        name: example
+
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "after we ran our role"
